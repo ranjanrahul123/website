@@ -1,0 +1,131 @@
+* {
+    margin:0 ;
+    padding:0 ;
+}
+
+body{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#e08f62;
+    font-size:20px;
+    line-height:2.0;
+}
+
+header{
+    display: flex;
+    background:#e08f62;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+  }
+  .logo-container,.nav-links{
+    display:flex;
+
+  }
+  .logo-container{
+      flex: 1;
+      margin:20px 10px;
+  }
+  .logo{
+    margin-bottom: 5px;
+    color:rgb(69, 80, 69);
+  }
+  nav{
+       flex:1;
+  }
+  
+  .nav-links{
+     display: flex;
+     justify-content:space-around;
+  }
+  
+   .nav-links,.settings a:link {
+    color: red;
+  }
+  .nav-links,.settings a:visited {
+    color: green;
+  }
+  
+  .nav-links,.settings a:hover {
+    color: hotpink;
+  }
+  
+  .nav-links,.settings a:active {
+    color:blue;
+  }
+
+
+#bg {
+  background-image:url(images/beach2.jpg);
+  background-size: cover;
+  background-position: center;
+  height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:0 20px;    
+}
+
+#bg h1{
+    font-size: 40px;
+}
+
+#bg p{
+    font-size: 25px;
+}
+
+#bg .button{
+    font-size: 15px;
+    text-decoration: none;
+    color:#e08f62;
+    border:#e08f62 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    outline: none;
+    transition: 0.5s;
+}
+.button-container {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  margin: 0 auto;
+}
+#bg .button:hover{
+    background:#e08f62;
+    transform: scale(1.5);
+    color:#fff;
+}
+
+.hidden{
+  font-size:20px;
+  top: 50vh;
+  text-align:left;
+  width: 90vw;
+  margin: 0 auto;
+  color:#e08f62;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua;  */
+}
+
+.hidden:target{
+  height:auto;
+}
+.hidepara {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 70%;
+  padding: 20px;
+  background-color:grey;
+  border-radius: 10px;
+  line-height: 1em;
+
+}

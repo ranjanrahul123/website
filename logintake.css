@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.text{
+    display:flex;
+}
+
+ .block1,.block2{  
+    height:100vh;
+ }
+ .block1{
+     background: blue;
+     height:auto;
+     flex:2;
+ }
+ .block2{
+     
+     flex:3;
+ }
+ form{
+     position:relative;
+     margin-left:250px;
+     margin-top:140px;
+    
+ }
+ .section{
+     margin-left:140px;
+     margin-top:auto;
+     padding:50px 0px;
+ }
+ .forms{
+    font-family: cursive;
+    font-size:20px;
+     padding:15px 0px;
+     margin-left:40px;
+ }
+ .forms input{
+    border:none;
+    outline:none;
+    background:none;
+ }
+ .btn{
+    padding: 10px 20px;
+     font-size:20px;
+     cursor: pointer;
+     margin-left:150px;
+     color:blue;
+     border-radius: 10px;
+     border:blue 3px solid;
+ }
+
+ .btn:hover{
+    background:blue;
+    transform: scale(1.15);
+    color:#fff;
+}
+.space{
+    margin-left:-50px;
+    width:40%;
+    border: 1px solid blue;
+}
+
+.image{
+    width:auto;
+    height:auto;
+    position:relative;
+    margin:110px 200px;
+    padding:10px 10px; 
+}
+.quotes{
+   position:absolute;
+   height:auto;
+   margin-top: -5%;
+   width:300px;
+   margin-left:140px;
+   font-size:30px;
+   font-family: cursive;
+}
+.sixthline{
+    width:50%;
+   margin-left:50px;
+   border: 1px solid red;
+}
+.fourthline{
+    width:38%;
+    margin-left:130px;
+}
+.fifthline{
+    width:38%;
+    margin-left:130px;
+}
+.lesson{
+   font-size:15px;
+   color:black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-left:150px;
+}
+.underlines{
+    color:blue;
+    margin-left:170px;
+    width:50%;
+}
+.home{
+    margin-top:auto;
+    float:right;
+}
+.home a{
+    margin-top:-4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:blue;
+}
+.home img{
+    margin-top:10px;
+}
+
+.signup{
+    margin-left: 130px;
+    width:100px;
+    height:80px;
+    color:black;
+}
+.back{
+    cursor:pointer;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:100px;
+    color:red;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border:grey 3px solid;
+}
+.signuperror{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;
+    font-size:15px;
+    position:absolute;
+    margin-top:150px;
+    margin-left:370px;
+
+}

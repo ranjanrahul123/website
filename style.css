@@ -1,0 +1,106 @@
+*{
+    margin :0;
+    padding:0;
+}
+ .team{
+     overflow:hidden;
+     text-align: center;
+     
+     padding:60px;
+ }
+ .team h1{
+     text-transform: uppercase;
+     margin-bottom: 60px;
+     color:white;
+     font-size:40px;
+ }
+ .design{
+     display:block;
+     margin:auto;
+     width:160px;
+     height:3px;
+     background:#3498db;
+     margin-bottom: 40px;
+ }
+ .pd{
+     margin-bottom: 40px;
+     border-color:#dc143c;
+
+ }
+ .pd a{
+     display:inline-block;
+     margin:30px;
+      width:160px;
+      height:160px;
+      overflow:hidden;
+      border-radius:50%;
+ }
+ .pd a img{
+     width:90%;
+     
+ }
+ .name{
+     text-align: center;
+     display:block;
+     text-transform: uppercase;
+     font-size: 20px;
+ }
+
+ .part{
+     width:400px;
+     font-size:20px;
+     text-align:left;
+     margin:auto;
+     color:white;
+     height:0;
+     overflow:hidden;
+     
+ }
+ 
+ .part:target{
+    height:auto;
+}
+.info{
+position: relative;
+left:100px;
+}
+
+header{
+    display: flex;
+    background: rgba(169, 171, 173, 0.548);
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+  }
+  .logo-container,.nav-links{
+    display:flex;
+  }
+  .logo-container{
+      flex: 1;
+  }
+  .logo{
+    margin:5px;
+  }
+  nav{
+       flex:1;
+  }
+
+  .nav-links{
+     display: flex;
+     justify-content:space-around;
+  }
+  
+   .nav-links,.settings a:link {
+    color: red;
+  }
+  .nav-links,.settings a:visited {
+    color: green;
+  }
+  
+  .nav-links,.settings a:hover {
+    color: hotpink;
+  }
+  
+  .nav-links,.settings a:active {
+    color:blue;
+}

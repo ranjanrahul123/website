@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.text{
+    height:100vh;
+    display:flex;
+}
+
+ .block1,.block2{  
+    height:100vh;
+    margin-bottom:0px;
+    padding:0px 0px 0px 0px;
+ }
+ .block1{
+     background: blue;
+     flex:2;
+ }
+ .block2{
+     
+     flex:3;
+ }
+ form{
+     margin:auto auto;
+     width:70%
+ }
+ .section{
+    margin:100px auto;
+    height:auto;
+    width:70%;
+    margin-right:10px;
+    
+}
+.forms
+{
+    
+    font-family: cursive;
+     position:relative;
+    text-align:left;
+    width:350px;
+    font-size:20px;
+    padding:8px 3px;
+    margin:10px -3px;
+}
+.forms input{
+    border:none;
+   outline:none;
+   background:none;
+   position:absolute;
+   margin-left:10px;
+   margin-top:3px;
+}
+.horizontal{
+    
+    font-family: 'Aclonica';
+    margin-top: 10px;
+    text-align: center;
+}
+.btn{
+    cursor: pointer;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:100px;
+    color:blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:blue 3px solid;
+
+}
+.btn:hover{
+    background:blue;
+    transform: scale(1.15);
+    color:#fff;
+}
+
+.firstline{
+    text-decoration-style:none ;
+    margin-left:100px;
+    border-width:2px;
+    line-height:1.2;
+}
+.secondline{
+    margin-left:100px;
+    border-width:2px;
+}
+.thirdline{
+    margin-left:80px;
+    border-width:2px;
+}
+.fourthline{
+    margin-left:125px;
+    border-width:2px;
+}
+.fifthline{
+    margin-left: 125px;
+    border-width:2px;
+}
+.forms2{
+    margin:10px 10px;
+}
+.circle{
+    font-size: 25px;
+    margin:10px 0px;
+    padding:10px 0px;
+    position:relative;
+    display:inline block;
+}
+
+
+.image{
+    
+     width:auto;
+     height:auto;
+     position:relative;
+     margin:110px 200px;
+     padding:10px 10px; 
+}
+.quotes{
+    position:absolute;
+    height:auto;
+    margin-top: -5%;
+    width:300px;
+    margin-left:140px;
+    font-size:30px;
+    font-family: cursive;
+}
+.sixthline{
+    margin-left:50px;
+    border: 1px solid red;
+}
+.lesson{
+    font-size:15px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:150px;
+}
+.login{
+    margin-left: 130px;
+    width:100px;
+    height:80px;
+    color:black;
+}
+.button{
+        cursor:pointer;
+        font-size:20px;
+        margin-top:20px;
+        margin-left:100px;
+        color:red;
+        padding: 10px 20px;
+        border-radius: 50%;
+        border:grey 3px solid;
+}
+.extra{
+    font-size:15px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-left:150px;
+}
+.signuperror{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-left:200px;
+      color: red;
+      padding:3px 3px;
+      margin-top:-10px;
+}
+
+.home{
+    margin-top:auto;
+    float:right;
+}
+.home a{
+    margin-top:-4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:blue;
+}
+.home img{
+    margin-top:10px;
+}

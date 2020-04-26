@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    header{
+    display: flex;
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+
+}
+  .logo-container,.nav-links{
+    display:flex;
+
+  }
+  .logo-container{
+      flex: 1;
+      margin-left: 5px;
+  }
+  .logo{
+    margin:5px;
+    color:yellowgreen;
+  }
+  nav{
+       flex:1;
+  }
+  
+  .nav-links{
+     display: flex;
+     justify-content:space-around;
+  }
+  
+   .nav-links,.settings a:link {
+    color: red;
+  }
+  .nav-links,.settings a:visited {
+    color: green;
+  }
+  
+  .nav-links,.settings a:hover {
+    color: hotpink;
+  }
+  
+  .nav-links,.settings a:active {
+    color:blue;
+  }
+
+
+    .design{
+        height:140px;
+        width:50%;
+        margin:250px auto;
+        border: 2px solid black;
+        border-radius:30px;
+        background: rgb(126, 202, 126);
+        
+    }
+    .rest{
+         text-align: center;
+         margin:25px auto;
+    }
+    .rest1{
+        margin:15px auto;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    .bg{
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    }
+</style>
+<body class="bg">
+    <header>
+        <div class="logo-container">
+             <img src="images/campus.svg" alt="logo" height="35" width="35"/>
+              <h2 class="logo">&nbsp IIITDM</h2>
+        </div>
+        <nav class="nav-links">
+           <a  href="index.html" style="text-decoration: none"><b>HOME</b></a><br>
+           <a  href="project.html" style="text-decoration: none"><b>PROJECT</b></a><br>
+           <a  href="details.html" style="text-decoration: none"><b>CONTRIBUTORS</b></a><br>
+           <a  href="help.html"style="text-decoration: none"><b>HELP</b></a>
+        </nav>
+        
+     </header>
+     <hr>
+    <div class ="design">
+    <p> 
+        <h2 class="rest1"><u> contact us</u></h2>
+        <h3 class="rest"> Please mail to this : abcde@gmail.com</h3>
+    </p>
+    </div>
+</body>
+</html>
