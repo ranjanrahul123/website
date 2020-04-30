@@ -1,6 +1,6 @@
 <?php
     
-    $servername ="localhost";
+    $servername ="localhost:3306";
     $dbusername ="id13504856_admin";
     $dbpassword ="0_y(LUhDf\aA?3DA";
     $dbname ="id13504856_cgpaa";
