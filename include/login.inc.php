@@ -1,4 +1,3 @@
-<html>
 <?php
 
 if(isset($_POST['submit']))
@@ -60,5 +59,3 @@ else
     header("LOCATION: ../register.html");
     exit();
 }
-?>
-</html>
