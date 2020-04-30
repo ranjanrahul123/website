@@ -59,4 +59,4 @@ else
     header("LOCATION: ../register.html");
     exit();
 }
->
+?>
