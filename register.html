@@ -35,30 +35,6 @@
          <div class="section">
          <br>            
 
-        <?php
-           if(isset($_GET["error"]))
-           {
-               if($_GET["error"] == "emptyfields")
-               echo '<p class="signuperror" margin-left"500px">FILL IN ALL FIELDS </p>';
-
-               else if($_GET["error"] == "invalidmailuid")
-               echo '<p class="signuperror"> INVALID USERNAME AND EMAIL!</p>';
-
-               else if($_GET["error"] == "invalidemail")
-               echo '<p class="signuperror"> INVALID USERNAME AND EMAIL!</p>';
-
-               else if($_GET["error"] == "usertaken")
-               echo '<p class="signuperror"> USERNAME IS ALREADY TAKEN !</p>';
-     
-           }
-        //     if($_GET["signup"] == "success")
-        //    {
-        //     echo '<p class="signuperror"> SIGNUP SUCCESSFUL !</p>';
-        //     echo " <script> location.href='login.html' </script>" ;
-        //    }
-           
-   
-    ?>
              <form action="include/signup.php" method="POST">
                  <h1 class ="horizontal" > CREATE  AN  ACCOUNT </h1>
                  <hr color="blue" margin-left="13px">
