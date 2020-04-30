@@ -40,7 +40,7 @@ if(isset($_POST['submit']))
                 session_start();
                 $_SESSION['userid'] = $row['username'];
 
-                echo " <script> location.href='../cgpa.php' </script>" ;
+                echo " <script> location.href='../cgpa.html' </script>" ;
                
             }
      } 
@@ -56,6 +56,6 @@ if(isset($_POST['submit']))
 }
 else
 {
-    header("LOCATION: ../register.php");
+    header("LOCATION: ../register.html");
     exit();
 }
