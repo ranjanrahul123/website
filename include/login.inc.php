@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
 
     if(empty($mailuid) || empty($pwd))
     {
-        header("LOCATION: ../login.php?error=emptyfields");
+        header("LOCATION: ../login.html?error=emptyfields");
         exit();
     }
     else 
@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
       $stmt = mysqli_stmt_init($conn);
       if(!mysqli_stmt_prepare($stmt,$sql))
       {
-        header("LOCATION: ../login.php?error=sqlerror");
+        header("LOCATION: ../login.html?error=sqlerror");
         exit();
       }
       else
@@ -32,7 +32,7 @@ if(isset($_POST['submit']))
 
             if($pwdcheck == false)
             {
-                header("LOCATION: ../login.php?error=wrongpassword");
+                header("LOCATION: ../login.html?error=wrongpassword");
                 exit();
             }
             else if($pwdcheck == true)
@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
      } 
           else
           {
-            header("LOCATION: ../login.php?error=nouser");
+            header("LOCATION: ../login.html?error=nouser");
             exit();
           }
       }
