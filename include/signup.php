@@ -11,22 +11,22 @@
 
       if(empty($name) || empty($roll) || empty($email) || empty($uid) || empty($pwd))
       {
-         header("LOCATION: ../register.php?error=emptyfields&name=".$name."&rollno=".$roll."&email=".$email);
+         header("LOCATION: ../register.html?error=emptyfields&name=".$name."&rollno=".$roll."&email=".$email);
          exit();
       }
       else if((!filter_var($email,FILTER_VALIDATE_EMAIL)) && (!preg_match("/^[a-zA-Z0-9]*$/",$uid)))
       {
-         header("LOCATION: ../register.php?error=invalidmailuid&name=".$name."&rollno=".$roll);
+         header("LOCATION: ../register.html?error=invalidmailuid&name=".$name."&rollno=".$roll);
          exit();
       }
       else if(!filter_var($email,FILTER_VALIDATE_EMAIL))
       {
-         header("LOCATION: ../register.php?error=invalidemail&name=".$name."&rollno=".$roll);
+         header("LOCATION: ../register.html?error=invalidemail&name=".$name."&rollno=".$roll);
          exit();
       }
       else if(!preg_match("/^[a-zA-Z0-9]*$/",$uid))
       {
-         header("LOCATION: ../register.php?error=invalidusername&name=".$name."&rollno=".$roll."&email=".$email);
+         header("LOCATION: ../register.html?error=invalidusername&name=".$name."&rollno=".$roll."&email=".$email);
          exit();
       }
       else
@@ -35,7 +35,7 @@
          $stmt = mysqli_stmt_init($conn);
          if(!mysqli_stmt_prepare($stmt,$sql))
          {
-            header("LOCATION: ../register.php?error=sqlerror");
+            header("LOCATION: ../register.html?error=sqlerror");
             exit();
          }
          else
@@ -46,7 +46,7 @@
             $resultcheck = mysqli_stmt_num_rows($stmt);
             if($resultcheck > 0)
             {
-               header("LOCATION: ../register.php?error=usertaken&email=".$email);
+               header("LOCATION: ../register.html?error=usertaken&email=".$email);
                exit();
             }
             else
@@ -55,7 +55,7 @@
                $stmt = mysqli_stmt_init($conn);
                if(!mysqli_stmt_prepare($stmt,$sql))
                {
-                 header("LOCATION: ../register.php?error=sqlerror");
+                 header("LOCATION: ../register.html?error=sqlerror");
                  exit();
                }
                else
@@ -65,9 +65,9 @@
                   mysqli_stmt_execute($stmt);
                   mysqli_stmt_store_result($stmt);
 
-                  // header("LOCATION: ../register.php?signup=success");
+                  // header("LOCATION: ../register.html?signup=success");
                  
-                  echo " <script> location.href='../login.php' </script>" ;
+                  echo " <script> location.href='../login.html' </script>" ;
                   exit();
                }
             }
@@ -79,7 +79,7 @@
       }
       else
       {
-         header("LOCATION: ../register.php?error=abc");
+         header("LOCATION: ../register.html?error=abc");
          exit();
       }
       
