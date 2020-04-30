@@ -34,20 +34,7 @@
    
         <div class="block2">
 
-        <?php
-           if(isset($_GET["error"]))
-           {
-            if($_GET["error"] == "sqlerror")
-            echo '<p class="signuperror" margin-left"500px">WRONG USERNAME ! </p>';
-
-            else if($_GET["error"] == "wrongpassword")
-            echo '<p class="signuperror" margin-left"500px">WRONG PASSWORD ! </p>';  
-
-            else if($_GET["error"] == "nouser")
-            echo '<p class="signuperror" margin-left"500px">NO USER EXIST! </p>'; 
-           
-           }
-         ?>  
+      
             <div class ="submission">           
                 <form action="include/login.inc.php" method="POST">
                 <div class="section"> 
