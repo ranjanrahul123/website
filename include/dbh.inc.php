@@ -1,25 +1,17 @@
 <?php
-    
-    $servername ="sql12.freemysqlhosting.net";
-    $dbusername ="sql12337129";
-    $dbpassword ="CrGnjAAr2c";
-    $dbname ="sql12337129";
 
-   $conn = mysqli_connect($servername, $dbusername,$dbpassword, $dbname) ;
+$servername = "localhost";
+$username = "id13504856_admin";
+$password = "JX^5iRJ*l#ALa/}Q";
+$database = "id13504856_cgpaa";
 
-       if(!$conn)
-       {
-           die("connection failed:".mysqli_connect_error());
-       }
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
 
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
-
-
-
-
-
-
-
-
-
-
+echo "Connected successfully";
+?>
