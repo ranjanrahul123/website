@@ -1,6 +1,6 @@
 <?php
     
-    $servername ="sql12.freemysqlhosting.net";
+    $servername ="sql12.freemysqlhosting.net:3306";
     $dbusername ="sql12337129";
     $dbpassword ="CrGnjAAr2c";
     $dbname ="sql12337129";
